@@ -28,6 +28,7 @@ const PaginationTable = () => {
   const { pageIndex, pageSize } = state;
   return (
     <>
+    <div className="text-3xl m-3">Pagination</div>
       <table {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (
@@ -63,6 +64,7 @@ const PaginationTable = () => {
         <span>
           | Go to page: {""}
           <input
+          className="w-20 py-1 px-2 border border-gray-300 rounded"
             type="number"
             defaultValue={pageIndex + 1}
             onChange={(e) => {
@@ -74,6 +76,7 @@ const PaginationTable = () => {
           />
         </span>
         <select
+         className="py-1 px-2 border border-gray-300 rounded"
           value={pageSize}
           onChange={(e) => setPageSize(Number(e.target.value))}
         >
@@ -83,16 +86,16 @@ const PaginationTable = () => {
             </option>
           ))}
         </select>
-        <button onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
+        <button className="py-1 px-2 bg-gray-500 hover:bg-gray-600 text-white rounded" onClick={() => gotoPage(0)} disabled={!canPreviousPage}>
           {"<<"}
         </button>
-        <button onClick={() => previousPage()} disabled={!canPreviousPage}>
+        <button className="py-1 px-2 bg-gray-500 hover:bg-gray-600 text-white rounded" onClick={() => previousPage()} disabled={!canPreviousPage}>
           Previous
         </button>
-        <button onClick={() => nextPage()} disabled={!canNextPage}>
+        <button className="py-1 px-2 bg-gray-500 hover:bg-gray-600 text-white rounded" onClick={() => nextPage()} disabled={!canNextPage}>
           Next
         </button>
-        <button onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
+        <button className="py-1 px-2 bg-gray-500 hover:bg-gray-600 text-white rounded" onClick={() => gotoPage(pageCount - 1)} disabled={!canNextPage}>
           {">>"}
         </button>
       </div>

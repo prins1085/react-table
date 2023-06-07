@@ -91,6 +91,7 @@ export const COLUMNS = [
     Filter: ColumnFilter,
     disableFilters: true,
     sticky: "left",
+
   },
   {
     Header: "First Name",
@@ -98,6 +99,7 @@ export const COLUMNS = [
     accessor: "first_name",
     Filter: ColumnFilter,
     sticky: "left",
+    
   },
   {
     Header: "Last Name",
@@ -135,13 +137,13 @@ export const COLUMNS = [
     accessor: "email",
     Filter: ColumnFilter,
   },
-  {
-    Header: "Age",
-    Footer: "Age",
-    accessor: "age",
-    disableFilters: true,
-    Filter: ColumnFilter,
-  },
+  // {
+  //   Header: "Age",
+  //   Footer: "Age",
+  //   accessor: "age",
+  //   disableFilters: true,
+  //   Filter: ColumnFilter,
+  // },
 ];
 
 //group columns
