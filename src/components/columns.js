@@ -51,36 +51,36 @@ export const APICOLUMNS = [
     ]
   },
   
-  {
-    Header: "Address",
-    Footer: "Address",
-    columns: [
-      {
-        Header: "Street",
-        accessor: "address.street",
-        Filter: ColumnFilter,
-        disableFilters: true,
-      },
-      {
-        Header: "Suite",
-        accessor: "address.suite",
-        Filter: ColumnFilter,
-        disableFilters: true,
-      },
-      {
-        Header: "City",
-        accessor: "address.city",
-        Filter: ColumnFilter,
-        disableFilters: true,
-      },
-      {
-        Header: "Zipcode",
-        accessor: "address.zipcode",
-        Filter: ColumnFilter,
-        disableFilters: true,
-      },
-    ],
-  },
+  // {
+  //   Header: "Address",
+  //   Footer: "Address",
+  //   columns: [
+  //     {
+  //       Header: "Street",
+  //       accessor: "address.street",
+  //       Filter: ColumnFilter,
+  //       disableFilters: true,
+  //     },
+  //     {
+  //       Header: "Suite",
+  //       accessor: "address.suite",
+  //       Filter: ColumnFilter,
+  //       disableFilters: true,
+  //     },
+  //     {
+  //       Header: "City",
+  //       accessor: "address.city",
+  //       Filter: ColumnFilter,
+  //       disableFilters: true,
+  //     },
+  //     {
+  //       Header: "Zipcode",
+  //       accessor: "address.zipcode",
+  //       Filter: ColumnFilter,
+  //       disableFilters: true,
+  //     },
+  //   ],
+  // },
 ];
 
 export const COLUMNS = [
